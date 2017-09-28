@@ -1,12 +1,12 @@
 from scipy.optimize import linprog
 import numpy as np
 
-s  = [10000.0, 10000.0, 20000.0, 20000.0]
-r  = [0.03, 0.04, 0.05, 0.06]
+s  = [10000.0, 40000.0, 5000.0, 5000.0]
+r  = [0.055, 0.045, 0.05, 0.06]
 nyear  = 5
 K      = 1
 t0     = 201709
-pmax   = 1250.0
+pmax   = 1300.0
 
 # Don't set pmax and nyear to very small values, otherwise there could be no solution
 #=================================================================================
