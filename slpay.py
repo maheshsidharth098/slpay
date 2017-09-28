@@ -38,7 +38,7 @@ res = linprog(c, A_ub=Aub, b_ub=bub,
               bounds=xb, options=dict(bland=True, tol=1.0e-6, disp=True))
 print 'Maximum monthly payment: ', pmax
 print '--------------------------------------'
-print ['YYYYMM'] + [' S'+format(i+1) for i in range(ns)]
+print ['YYYYMM'] + ['SL'+format(i+1) for i in range(ns)]
 print '--------------------------------------'
 print np.append(np.array(time).reshape([N,1]), 
                 res.x.reshape([ns, N]).T, axis=1).astype(int)
